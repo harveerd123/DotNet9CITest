@@ -30,9 +30,3 @@ jobs:
 
     - name: Publish app (Release configuration)
       run: dotnet publish DotNet9CITest.sln -c Release -o ./publish
-
-    - name: Upload build artifacts
-      uses: actions/upload-artifact@v3.0.0
-      with:
-        name: dotnet-publish-files
-        path: ./publish
