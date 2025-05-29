@@ -29,4 +29,4 @@ jobs:
       run: dotnet test App.Tests/App.Tests.csproj --no-build --verbosity normal
 
     - name: Publish app (Release configuration)
-      run: dotnet publish DotNet9CITest.sln -c Release -o ./publish
+      run: dotnet publish App/App.csproj -c Release -o ./publish
